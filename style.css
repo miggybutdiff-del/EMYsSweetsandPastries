@@ -1,0 +1,116 @@
+/* =======================
+   BASE STYLES
+======================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff7f9;
+  margin: 0;
+  padding-bottom: 70px;
+}
+
+/* =======================
+   NAVBAR
+======================= */
+.navbar {
+  background: #fff;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* =======================
+   BUTTONS
+======================= */
+.btn-custom {
+  background-color: #ff0000 !important;
+  color: white !important;
+  border-radius: 30px;
+  padding: 10px 25px;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #cc0000 !important;
+  transform: scale(1.05);
+}
+
+/* =======================
+   CARDS
+======================= */
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.service-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* =======================
+   IMAGES
+======================= */
+img {
+  transition: transform 0.2s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+/* =======================
+   MODAL (POPUP DESIGN)
+======================= */
+.modal-content {
+  border-radius: 20px;
+  border: none;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+/* Product image inside modal */
+#modalImage {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* Quantity input */
+#quantity {
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
