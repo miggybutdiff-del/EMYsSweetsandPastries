@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<title>Products | EMY's Sweets and Pastries</title>
+</head>
+
+<body style="font-family: 'Poppins', sans-serif; background-color:#fdf8f6;">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4" style="font-family: 'Playfair Display', serif;">
+       EMY's Sweets and Pastries
+    </a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link px-3 text-secondary" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link px-3 text-secondary" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link px-3 fw-semibold text-dark" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link px-3 text-secondary" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link px-3 text-secondary" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PRODUCTS -->
+<div class="container py-5">
+<h2 class="text-center mb-5 fw-bold" style="font-family:'Playfair Display', serif;">
+  Our Products
+</h2>
+
+<div class="row g-4">
+
+<!-- ALL YOUR ORIGINAL PRODUCTS RESTORED -->
+
+<div class="col-md-4">
+  <div class="card border-0 shadow-sm rounded-4 text-center h-100">
+    <img src="images/almondtart.jpg" class="img-fluid rounded-top">
+    <div class="p-4">
+      <h6 class="fw-bold">Almond Tarts</h6>
+      <p class="text-muted mb-2">₱169</p>
+      <button class="btn btn-sm btn-custom" onclick="openModal('Almond Tarts','images/almondtart.jpg',169)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card border-0 shadow-sm rounded-4 text-center h-100">
+    <img src="images/cashewtart.jpg" class="img-fluid rounded-top">
+    <div class="p-4">
+      <h6 class="fw-bold">Cashew Tarts</h6>
+      <p class="text-muted mb-2">₱169</p>
+      <button class="btn btn-sm btn-custom" onclick="openModal('Cashew Tarts','images/cashewtart.jpg',169)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card border-0 shadow-sm rounded-4 text-center h-100">
+    <img src="images/MangoTart.jpg" class="img-fluid rounded-top">
+    <div class="p-4">
+      <h6 class="fw-bold">Mango Tarts</h6>
+      <p class="text-muted mb-2">₱169</p>
+      <button class="btn btn-sm btn-custom" onclick="openModal('Mango Tarts','images/MangoTart.jpg',169)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card border-0 shadow-sm rounded-4 text-center h-100">
+    <img src="images/PeanutTart.jpg" class="img-fluid rounded-top">
+    <div class="p-4">
+      <h6 class="fw-bold">Peanut Tarts</h6>
+      <p class="text-muted mb-2">₱169</p>
+      <button class="btn btn-sm btn-custom" onclick="openModal('Peanut Tarts','images/PeanutTart.jpg',169)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card border-0 shadow-sm rounded-4 text-center h-100">
+    <img src="images/BoatTart.jpg" class="img-fluid rounded-top">
+    <div class="p-4">
+      <h6 class="fw-bold">Boat Tarts</h6>
+      <p class="text-muted mb-2">₱189</p>
+      <button class="btn btn-sm btn-custom" onclick="openModal('Boat Tarts','images/BoatTart.jpg',189)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card border-0 shadow-sm rounded-4 text-center h-100">
+    <img src="images/AssortedTarts.jpg" class="img-fluid rounded-top">
+    <div class="p-4">
+      <h6 class="fw-bold">Assorted Tarts</h6>
+      <p class="text-muted mb-2">₱169</p>
+      <button class="btn btn-sm btn-custom" onclick="openModal('Assorted Tarts','images/AssortedTarts.jpg',169)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card border-0 shadow-sm rounded-4 text-center h-100">
+    <img src="images/tamarindsalted.jpg" class="img-fluid rounded-top">
+    <div class="p-4">
+      <h6 class="fw-bold">Salted Tamarinds</h6>
+      <p class="text-muted mb-2">₱129</p>
+      <button class="btn btn-sm btn-custom" onclick="openModal('Salted Tamarinds','images/tamarindsalted.jpg',129)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card border-0 shadow-sm rounded-4 text-center h-100">
+    <img src="images/tamarindsweet.jpg" class="img-fluid rounded-top">
+    <div class="p-4">
+      <h6 class="fw-bold">Sweet Tamarinds</h6>
+      <p class="text-muted mb-2">₱129</p>
+      <button class="btn btn-sm btn-custom" onclick="openModal('Sweet Tamarinds','images/tamarindsweet.jpg',129)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card border-0 shadow-sm rounded-4 text-center h-100">
+    <img src="images/tamarindspicy.jpg" class="img-fluid rounded-top">
+    <div class="p-4">
+      <h6 class="fw-bold">Spicy Tamarind</h6>
+      <p class="text-muted mb-2">₱129</p>
+      <button class="btn btn-sm btn-custom" onclick="openModal('Spicy Tamarind','images/tamarindspicy.jpg',129)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card border-0 shadow-sm rounded-4 text-center h-100">
+    <img src="images/barquiron.jpg" class="img-fluid rounded-top">
+    <div class="p-4">
+      <h6 class="fw-bold">Barquiron</h6>
+      <p class="text-muted mb-2">₱189</p>
+      <button class="btn btn-sm btn-custom" onclick="openModal('Barquiron','images/barquiron.jpg',189)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card border-0 shadow-sm rounded-4 text-center h-100">
+    <img src="images/polvoron.jpg" class="img-fluid rounded-top">
+    <div class="p-4">
+      <h6 class="fw-bold">Polvoron</h6>
+      <p class="text-muted mb-2">₱209</p>
+      <button class="btn btn-sm btn-custom" onclick="openModal('Polvoron','images/polvoron.jpg',209)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+<!-- MODAL -->
+<div class="modal fade" id="orderModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 p-3">
+
+      <div class="d-flex justify-content-end">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body" id="modalContent">
+
+        <div class="row align-items-center">
+          <div class="col-5">
+            <img id="modalImage" src="" class="img-fluid rounded">
+          </div>
+
+          <div class="col-7">
+            <h6 id="modalTitle" class="fw-bold"></h6>
+
+            <label class="mt-2">Quantity:</label>
+            <input type="number" id="quantity" class="form-control mb-2" value="1" min="1" oninput="updateTotal()">
+
+            <p class="fw-bold">Total: ₱<span id="totalPrice">0</span></p>
+
+            <button class="btn btn-custom w-100" onclick="placeOrder()">Buy</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center py-4 mt-5" style="background:#fff;">
+  <p class="mb-0 text-muted">© 2026 EMY's Sweets and Pastries | Made with love 💕</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+let price = 0;
+let productName = "";
+
+function openModal(name, img, p) {
+  price = p;
+  productName = name;
+
+  document.getElementById("modalTitle").innerText = name;
+  document.getElementById("modalImage").src = img;
+  document.getElementById("quantity").value = 1;
+
+  updateTotal();
+
+  new bootstrap.Modal(document.getElementById('orderModal')).show();
+}
+
+function updateTotal() {
+  let qty = document.getElementById("quantity").value;
+  document.getElementById("totalPrice").innerText = qty * price;
+}
+
+function placeOrder() {
+  let qty = document.getElementById("quantity").value;
+
+  document.getElementById("modalContent").innerHTML = `
+    <div class="text-center p-4">
+      <h4 class="fw-bold text-success">Order Placed</h4>
+      <p>${productName}</p>
+      <p>Quantity: ${qty}</p>
+      <p class="fw-bold">Total: ₱${qty * price}</p>
+    </div>
+  `;
+}
+</script>
+
+</body>
+</html>
