@@ -1,100 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EMY's Sweets and Pastries — freshly made, high-quality pastries and desserts from San Fernando, Pampanga.">
 
-<!-- Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>EMY's Sweets and Pastries</title>
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/emyslogoo.png">
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<title>Services | EMY's Sweets and Pastries</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="font-family: 'Poppins', sans-serif; background-color:#fdf8f6;">
-
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+<nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
   <div class="container">
-    <a class="navbar-brand fw-bold fs-4" style="font-family: 'Playfair Display', serif;">
-       EMY's Sweets and Pastries
-    </a>
 
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="images/emyslogoo.png" alt="EMY's Logo" style="height: 30px width: auto; margin-right: 10px;">
+      <span class="fw-bold">EMY's Sweets & Pastries</span>
+    </a>
+            
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+      aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>    
     </button>
 
-    <div class="collapse navbar-collapse" id="nav">
+    <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link px-3 text-secondary" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link px-3 text-secondary" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link px-3 text-secondary" href="products.html">Products</a></li>
-        <li class="nav-item"><a class="nav-link px-3 fw-semibold text-dark" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link px-3 text-secondary" href="contact.html">Contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
       </ul>
     </div>
+
   </div>
 </nav>
 
-<!-- SERVICES SECTION -->
-<div class="container py-5 text-center">
-  <h2 class="mb-5 fw-bold" style="font-family:'Playfair Display', serif;">
-    Our Services
-  </h2>
-
-  <div class="row g-4">
-
-    <!-- SERVICE 1 -->
-    <div class="col-md-4">
-  <a href="https://shopee.ph/fatimaegarcia?categoryId=100629&entryPoint=ShopByPDP&itemId=23329091499&upstream=search" 
-     target="_blank"
-     class="text-decoration-none text-dark">
-     
-    <div class="p-4 bg-white shadow-sm rounded-4 h-100 text-center service-card">
-      <i class="bi bi-truck fs-1 mb-3"></i>
-      <h5 class="fw-bold mb-3">Delivery</h5>
-    </div>
-
-  </a>
+<div class="page-header">
+  <span class="badge-rose">What We Offer</span>
+  <h1>Our Services</h1>
+  <p>Flexible options to get your favourites to you</p>
 </div>
 
-    <!-- SERVICE 2 -->
-    <div class="col-md-4">
-  <a href="contact.html" class="text-decoration-none text-dark">
-    <div class="p-4 bg-white shadow-sm rounded-4 h-100 text-center service-card">
-      <i class="bi bi-shop fs-1 mb-3"></i>
-      <h5 class="fw-bold mb-3">Retail</h5>
+<section class="py-5" style="background:var(--cream);">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-sm-6 col-md-4">
+        <a href="https://shopee.ph/fatimaegarcia?categoryId=100629&entryPoint=ShopByPDP&itemId=23329091499&upstream=search"
+           target="_blank" rel="noopener noreferrer"
+           class="service-card h-100">
+          <div class="service-icon">
+            <i class="bi bi-truck" aria-hidden="true"></i>
+          </div>
+          <h5>Delivery</h5>
+          <p>Order via Shopee and get your favourites delivered right to your door.</p>
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <a href="contact.html" class="service-card h-100">
+          <div class="service-icon">
+            <i class="bi bi-shop" aria-hidden="true"></i>
+          </div>
+          <h5>Retail</h5>
+          <p>Visit us in-store or send a message to place a personal order.</p>
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <a href="https://www.google.com/maps/search/?api=1&query=Emy's+Sweets+and+Pastries+12th+Avenue+Unisite+Subdivision+San+Fernando+Pampanga"
+           target="_blank" rel="noopener noreferrer"
+           class="service-card h-100">
+          <div class="service-icon">
+            <i class="bi bi-house-heart" aria-hidden="true"></i>
+          </div>
+          <h5>Wholesale</h5>
+          <p>Bulk orders available — great for events, resellers, and gift hampers.</p>
+        </a>
+      </div>
+
     </div>
-  </a>
-</div>
 
-    <!-- SERVICE 3 -->
-    <div class="col-md-4">
-  <a href="https://www.google.com/maps/search/?api=1&query=Emy's+Sweets+and+Pastries+12th+Avenue+Unisite+Subdivision+San+Fernando+Pampanga"
-     target="_blank"
-     class="text-decoration-none text-dark">
-
-    <div class="p-4 bg-white shadow-sm rounded-4 h-100 text-center service-card">
-      <i class="bi bi-house-heart fs-1 mb-3"></i>
-      <h5 class="fw-bold mb-3">Wholesale</h5>
+    <div class="row mt-5 g-4">
+      <div class="col-md-6">
+        <div style="background:var(--white);border-radius:var(--radius-md);padding:1.75rem;box-shadow:var(--shadow-sm);">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:.75rem;">
+            <span style="width:40px;height:40px;background:var(--rose-light);color:var(--rose);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">
+              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+            </span>
+            <strong style="font-family:var(--font-display);font-size:1rem;color:var(--brown);">Find Us</strong>
+          </div>
+          <p style="color:var(--muted);font-size:.88rem;margin:0;line-height:1.7;">
+            12th Avenue, Unisite Subdivision,<br>San Fernando City, 2000, Pampanga
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div style="background:var(--white);border-radius:var(--radius-md);padding:1.75rem;box-shadow:var(--shadow-sm);">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:.75rem;">
+            <span style="width:40px;height:40px;background:var(--rose-light);color:var(--rose);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">
+              <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+            </span>
+            <strong style="font-family:var(--font-display);font-size:1rem;color:var(--brown);">Call or Message</strong>
+          </div>
+          <p style="color:var(--muted);font-size:.88rem;margin:0;line-height:1.7;">
+            (045) 963 1073<br>
+            <a href="contact.html" style="color:var(--rose);text-decoration:none;">Or use our contact form →</a>
+          </p>
+        </div>
+      </div>
     </div>
 
-  </a>
-</div>
+  </div>
+</section>
 
-<!-- FOOTER -->
-<footer class="text-center py-4 mt-5" style="background:#fff;">
-  <p class="mb-0 text-muted">
-    © 2026 EMY's Sweets and Pastries | Made with love 💕
-  </p>
+<footer class="footer py-3">
+  <div class="container position-relative text-center">
+
+    <p class="mb-0">
+      © 2026 EMY's Sweets and Pastries &nbsp;|&nbsp; Made with love 💕
+    </p>
+
+    <div class="footer-icons">
+      <a href="https://www.facebook.com/EmysSweetsAndPastries" target="_blank" class="footer-icon">
+        <i class="bi bi-facebook"></i>
+      </a>
+  </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
