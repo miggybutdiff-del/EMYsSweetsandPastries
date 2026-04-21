@@ -33,6 +33,38 @@
 
     img { max-width: 100%; display: block; }
 
+    @media (max-width: 576px) {
+  .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .navbar-brand span {
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .navbar-toggler {
+    margin-left: 8px;
+    flex-shrink: 0;
+  }
+
+  .navbar-brand img {
+    height: 32px;
+  }
+}
+
     .navbar {
       background: var(--white) !important;
       box-shadow: var(--shadow-sm);
